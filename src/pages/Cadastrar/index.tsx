@@ -1,6 +1,8 @@
 import styles from './Cadastrar.module.css';
 import Button from '@/app/components/Button';
 import { useRouter } from 'next/navigation';
+import { IoIosSave } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io";
 
 export default function Login() {
   const router = useRouter();
@@ -94,8 +96,14 @@ export default function Login() {
             </form>
         </div>
         <div className={styles.buttons}>
-          <Button onClick={handleLoginRedirect}>Voltar</Button>
-          <Button>Salvar</Button>
+          <Button onClick={handleLoginRedirect}>
+            <IoIosArrowBack />
+            Voltar
+          </Button>
+          <Button>
+            <IoIosSave />
+            Salvar
+          </Button>
         </div>
     </div>
   );

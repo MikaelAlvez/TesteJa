@@ -1,11 +1,15 @@
 import LayoutServidores from '@/app/components/LayoutServidor';
+import styles from './HomeServidor.module.css';
+import Button from '@/app/components/Button';
+import Filter from '@/app/components/Filter';
 
 export default function HomeServidor() {
   const nomeUsuario = "Fulano";
   
   return (
-    <div>
-        <LayoutServidores nomeUsuario={nomeUsuario}></LayoutServidores>
+    <div className={styles.container}>
+      <LayoutServidores nomeUsuario={nomeUsuario} />
+      <Filter/>
     </div>
   );
 }

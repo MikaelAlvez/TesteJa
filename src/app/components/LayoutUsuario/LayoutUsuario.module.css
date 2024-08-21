@@ -1,0 +1,145 @@
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu {
+    width: 96%;
+    height: 50px;
+    background-color: #00B3F3;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .menu li {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+  }
+  
+  .menu li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #0070f3;
+    transition: width 0.3s;
+  }
+  
+  .menu li a:hover::after {
+    width: 100%;
+  }
+  
+  .menu li a:hover {
+    color: #0070f3;
+  }
+  
+  .menu li a:hover svg {
+    fill: #0070f3;
+  }
+  
+  .menu li.welcome a::after {
+    width: 100%;
+  }
+  
+  .menu li svg {
+    fill: #ffffff;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: fill 0.3s;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      width: 90%;
+      height: auto;
+      padding: 10px 5%;
+      position: static;
+      transform: none;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu li {
+      margin-bottom: 10px;
+    }
+  
+    .menu li a {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu {
+      width: 90%;
+      height: auto;
+      padding: 10px 5%;
+      position: static;
+      transform: none;
+    }
+  
+    .menu ul {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .menu li {
+      margin-bottom: 0;
+    }
+  
+    .menu li a {
+      font-size: 0;
+      padding: 8px;
+    }
+  
+    .menu li svg {
+      margin-right: 0;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  

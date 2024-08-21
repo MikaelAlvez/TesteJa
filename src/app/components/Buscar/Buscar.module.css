@@ -1,0 +1,40 @@
+.buscarContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input {
+    flex: 0.5em;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #f4f4f4;
+    border: none; 
+    outline: none;
+  }
+  
+  .button {
+    background-color: #00B3F3;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0070f3;
+  }
+  
+  .icon {
+    color: #ffffff;
+    font-size: 20px;
+  }
+  

@@ -1,0 +1,98 @@
+.listaContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+  max-width: 1225px;
+  height: 80px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #F8F8F8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.info {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.field {
+  flex: 1;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actionButtonConfirmar,
+.actionButtonCancelar,
+.actionButtonReagendar {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  font-size: 0.875rem;
+  transition: color 0.3s;
+}
+
+.actionButtonConfirmar {
+  color: #005F01;
+}
+
+.actionButtonCancelar {
+  color: #DC143C;
+}
+
+.actionButtonReagendar {
+  color: #ffdd00;
+}
+
+.actionButtonConfirmar:hover,
+.actionButtonCancelar:hover,
+.actionButtonReagendar:hover {
+  color: #005bb5;
+}
+
+@media (max-width: 768px) {
+  .listaContainer {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+      gap: 10px;
+  }
+
+  .info {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .field {
+      font-size: 0.875rem;
+  }
+
+  .actions {
+      flex-direction: column;
+      gap: 5px;
+  }
+
+  .actionButtonConfirmar,
+  .actionButtonCancelar,
+  .actionButtonReagendar {
+      width: 100%;
+      font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .actionButtonConfirmar,
+  .actionButtonCancelar,
+  .actionButtonReagendar {
+      font-size: 0.625rem;
+  }
+}

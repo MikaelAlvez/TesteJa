@@ -39,6 +39,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  position: relative;
 }
 
 .loginContainer h2 {
@@ -106,6 +107,26 @@
   text-align: center;
 }
 
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.redes svg {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 3em;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .background h1 {
     font-size: 50px;
@@ -130,6 +151,11 @@
   .loginContainer button {
     font-size: 16px;
     padding: 12px;
+  }
+
+  .redes svg {
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -157,5 +183,14 @@
   .loginContainer button {
     font-size: 14px;
     padding: 10px;
+  }
+
+  .redes svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .closeIcon {
+    font-size: 2em;
   }
 }
