@@ -1,0 +1,35 @@
+.button {
+    width: 100%;
+    max-width: 265px; 
+    height: 65px;
+    background-color: #00B3F3;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button:hover {
+    background-color: #009FDB;
+  }
+  
+  @media (max-width: 768px) {
+    .button {
+      width: 25%;
+      max-width: none; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .button {
+      font-size: 14px; 
+      height: 40px;
+    }
+  }
+  

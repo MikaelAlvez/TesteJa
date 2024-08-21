@@ -26,6 +26,26 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.home-background {
+  background-image: url('../Images/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-background h1 {
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-family: monospace;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
