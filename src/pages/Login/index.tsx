@@ -17,6 +17,21 @@ export default function Login() {
   const handleHomeRedirect = () => {
     home.push('/');
   };
+
+  function handleCpfInput(event: React.FormEvent<HTMLInputElement>) {
+    const input = event.currentTarget;
+    let value = input.value.replace(/\D/g, '');
+    if (value.length > 3) {
+      value = value.replace(/^(\d{3})(\d)/, '$1.$2');
+    }
+    if (value.length > 6) {
+      value = value.replace(/^(\d{3})\.(\d{3})(\d)/, '$1.$2.$3');
+    }
+    if (value.length > 9) {
+      value = value.replace(/^(\d{3})\.(\d{3})\.(\d{3})(\d)/, '$1.$2.$3-$4');
+    }
+    input.value = value;
+  }
   
   return (
     <div className={styles.background}>
@@ -31,6 +46,8 @@ export default function Login() {
             placeholder="CPF"
             pattern="\d{3}.\d{3}.\d{3}-\d{2}"
             required
+            onInput={handleCpfInput}
+            maxLength={14}
           />
           <input 
             type="password" 

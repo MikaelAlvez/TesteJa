@@ -25,8 +25,6 @@ function handleCpfInput(event: React.FormEvent<HTMLInputElement>) {
   input.value = value;
 }
 
-  
-
   return (
     <div className={styles.cadastro}>
         <h1>Cadastrar</h1>

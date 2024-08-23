@@ -13,8 +13,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  padding: 20px;
 }
 
 .background h1 {
@@ -38,8 +36,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
   position: relative;
+  margin: auto;
 }
 
 .loginContainer h2 {
@@ -128,13 +126,11 @@
 }
 
 @media (max-width: 768px) {
-  .background h1 {
-    font-size: 50px;
-  }
-
   .loginContainer {
     max-width: 80%;
     min-height: 350px;
+    width: 80%;
+    height: 70%;
     padding: 30px;
   }
 
@@ -146,11 +142,22 @@
   .loginContainer input[type="password"] {
     font-size: 14px;
     padding: 8px;
+    height: 40px;
   }
 
   .loginContainer button {
     font-size: 16px;
     padding: 12px;
+    height: 50px;
+  }
+
+  .textBlue,
+  .check label {
+    font-size: 10px;
+  }
+
+  .closeIcon {
+    display: none;
   }
 
   .redes svg {
@@ -160,14 +167,12 @@
 }
 
 @media (max-width: 480px) {
-  .background h1 {
-    font-size: 40px;
-  }
-
   .loginContainer {
     max-width: 90%;
     min-height: 300px;
     padding: 20px;
+    width: 80%;
+    height: 80%;
   }
 
   .loginContainer h2 {
@@ -178,19 +183,67 @@
   .loginContainer input[type="password"] {
     font-size: 12px;
     padding: 6px;
+    height: 35px;
   }
 
   .loginContainer button {
     font-size: 14px;
     padding: 10px;
+    height: 45px;
+  }
+
+  .textBlue,
+  .check label {
+    font-size: 9px;
+  }
+
+  .closeIcon {
+    display: none;
   }
 
   .redes svg {
     width: 24px;
     height: 24px;
   }
+}
+
+@media (max-width: 360px) {
+  .loginContainer {
+    max-width: 95%;
+    min-height: 280px;
+    padding: 15px;
+    width: 80%;
+    height: 70%; 
+ }
+
+  .loginContainer h2 {
+    font-size: 20px;
+  }
+
+  .loginContainer input[type="text"],
+  .loginContainer input[type="password"] {
+    font-size: 10px;
+    padding: 5px;
+    height: 30px;
+  }
+
+  .loginContainer button {
+    font-size: 12px;
+    padding: 8px;
+    height: 30px;
+  }
+
+  .textBlue,
+  .check label {
+    font-size: 8px;
+  }
 
   .closeIcon {
-    font-size: 2em;
+    display: none;
+  }
+
+  .redes svg {
+    width: 20px;
+    height: 20px;
   }
 }
