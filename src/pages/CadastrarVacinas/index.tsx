@@ -12,16 +12,18 @@ export default function CadastrarVacinas() {
         <div className={styles.formContainer}>
             <form>
                 <div>
-                    <label>Nome</label>
+                    <label htmlFor="nome">Nome</label>
                     <input 
+                        id="nome"
                         type="text" 
                         placeholder="Nome"
                         required
                     />
                 </div>
                 <div>
-                    <label>Fabricante</label>
+                    <label htmlFor="fab">Fabricante</label>
                     <input 
+                        id="fab"
                         type="text" 
                         placeholder="Fabricante"
                         required
@@ -29,8 +31,9 @@ export default function CadastrarVacinas() {
                 </div>
                 <div className={styles.formRow}>
                     <div>
-                        <label>Lote</label>
+                        <label htmlFor="lote">Lote</label>
                         <input 
+                            id="lote"
                             type="text" 
                             placeholder="12345678"
                             required
@@ -38,8 +41,9 @@ export default function CadastrarVacinas() {
                         />
                     </div>
                     <div>
-                        <label>Quant.</label>
+                        <label htmlFor="quant">Quant.</label>
                         <input 
+                            id="quant"
                             type="number" 
                             placeholder="Quantidade"
                             required
@@ -49,8 +53,9 @@ export default function CadastrarVacinas() {
                     </div>
                 </div>
                 <div>
-                    <label>Data</label>
+                    <label htmlFor="data">Data</label>
                     <input 
+                        id="data"
                         type="date" 
                         required
                     />

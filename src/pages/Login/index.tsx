@@ -29,6 +29,7 @@ export default function Login() {
           <input 
             type="text" 
             placeholder="CPF"
+            pattern="\d{3}.\d{3}.\d{3}-\d{2}"
             required
           />
           <input 
