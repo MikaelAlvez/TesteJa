@@ -25,9 +25,44 @@
   text-align: center;
 }
 
+.statusConfirmado {
+  background-color: #005F01;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.statusCancelado {
+  background-color: #DC143C;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.statusPendente {
+  background-color: #ffdd00;
+  color: black;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
 .actions {
   display: flex;
   gap: 10px;
+}
+
+.statusConfirmado,
+.statusCancelado,
+.statusPendente {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 5px 10px;
+  max-width: 150px;
+  min-width: 60px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .actionButtonConfirmar,
@@ -36,7 +71,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  width: 80px;
+  width: 100%;
   font-size: 0.875rem;
   transition: color 0.3s;
 }
