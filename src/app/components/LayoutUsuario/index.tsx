@@ -4,7 +4,6 @@ import { IoHomeSharp } from "react-icons/io5";
 import { ImAddressBook } from "react-icons/im";
 import { BiSolidInjection } from "react-icons/bi";
 import { FaCalendarPlus } from "react-icons/fa";
-import { FaBoxArchive } from "react-icons/fa6";
 import { FaClipboardList } from "react-icons/fa";
 import { ImExit } from "react-icons/im";
 import { FaUser } from "react-icons/fa";
@@ -15,7 +14,7 @@ export default function LayoutUsuario({nomeUsuario}) {
       <nav className={styles.menu}>
         <ul>
           <li>
-            <Link href="/HomeServidor">
+            <Link href="/HomeUsuario">
                 <IoHomeSharp />
                 Home
             </Link>

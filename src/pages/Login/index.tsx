@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Login.module.css';
 import Button from '@/app/components/Button';
 import Link from 'next/link';
@@ -9,13 +9,33 @@ import { TbXboxXFilled } from "react-icons/tb";
 
 export default function Login() {
   const router = useRouter();
+  
+  const usuarios = [
+    { cpf: '111.111.111-11', senha: 'senha123', tipo: 'servidor' },
+    { cpf: '222.222.222-22', senha: 'senha321', tipo: 'comum' }
+  ];
+
+  const [cpf, setCpf] = useState('');
+  const [senha, setSenha] = useState('');
+
   const handleLoginRedirect = () => {
-    router.push('/HomeServidor');
+    const usuarioEncontrado = usuarios.find(
+      user => user.cpf === cpf && user.senha === senha
+    );
+
+    if (usuarioEncontrado) {
+      if (usuarioEncontrado.tipo === 'servidor') {
+        router.push('/HomeServidor');
+      } else {
+        router.push('/HomeUsuario');
+      }
+    } else {
+      alert('CPF ou senha incorretos.');
+    }
   };
 
-  const home = useRouter();
   const handleHomeRedirect = () => {
-    home.push('/');
+    router.push('/');
   };
 
   function handleCpfInput(event: React.FormEvent<HTMLInputElement>) {
@@ -31,8 +51,9 @@ export default function Login() {
       value = value.replace(/^(\d{3})\.(\d{3})\.(\d{3})(\d)/, '$1.$2.$3-$4');
     }
     input.value = value;
+    setCpf(value);
   }
-  
+
   return (
     <div className={styles.background}>
       <div className={styles.loginContainer}>
@@ -53,6 +74,7 @@ export default function Login() {
             type="password" 
             placeholder="Senha" 
             required
+            onChange={(e) => setSenha(e.target.value)}
           />
           <div className={styles.check}>
             <div className={styles.checkbox}>
