@@ -5,9 +5,16 @@ import styles from './AgendamentosUsuarios.module.css';
 import ListaAgendamentoUsuario from '@/app/components/ListaAgendamentoUsuario';
 import Button from '@/app/components/Button';
 import { FaCalendarPlus } from "react-icons/fa";
+import { useRouter } from 'next/navigation';
 
 export default function AgendamentoServidor() {
   const nomeUsuario = "Fulano";
+
+  const router = useRouter();
+
+  const handleHomeRedirect = () => {
+    router.push('/NovoAgendamento');
+  };
   
   const agendamentos = [
     { local: 'UBS II - Liberdade', obs: '1ª dose - Vacina', status: 'Confirmado', data: '01 de Setembro, 2024' },
@@ -44,7 +51,7 @@ export default function AgendamentoServidor() {
         ))}
       </div>
       <div className={styles.buttonsContainer}>
-        <Button>
+        <Button onClick={handleHomeRedirect}>
           <FaCalendarPlus />
           Novo agendamento
         </Button>
