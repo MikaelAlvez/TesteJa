@@ -20,7 +20,7 @@ export default function LayoutUsuario({nomeUsuario}) {
             </Link>
           </li>
           <li>
-            <Link href="/AgendamentoUsuario">
+            <Link href="/AgendamentosUsuarios">
                 <ImAddressBook />
                 Agendamentos
             </Link>

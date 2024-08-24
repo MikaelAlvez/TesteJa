@@ -1,14 +1,11 @@
 import { useState } from 'react';
-import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import { ptBR } from 'date-fns/locale';
 import LayoutServidores from '@/app/components/LayoutServidor';
 import Buscar from '@/app/components/Buscar';
 import ListaAgendamento from '@/app/components/ListaAgendamento';
 import styles from './AgendamentoServidor.module.css';
 
 export default function AgendamentoServidor() {
-  const [date, setDate] = useState(new Date());
   const nomeUsuario = "Fulano";
   
   const agendamentos = [
