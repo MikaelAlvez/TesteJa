@@ -11,54 +11,59 @@ export default function CadastrarVacinas() {
         <LayoutServidores nomeUsuario={nomeUsuario} />
         <div className={styles.formContainer}>
             <form>
-                <div>
-                    <label htmlFor="nome">Nome</label>
-                    <input 
-                        id="nome"
-                        type="text" 
-                        placeholder="Nome"
-                        required
-                    />
-                </div>
-                <div>
-                    <label htmlFor="fab">Fabricante</label>
-                    <input 
-                        id="fab"
-                        type="text" 
-                        placeholder="Fabricante"
-                        required
-                    />
-                </div>
-                <div className={styles.formRow}>
-                    <div>
-                        <label htmlFor="lote">Lote</label>
-                        <input 
-                            id="lote"
-                            type="text" 
-                            placeholder="12345678"
-                            required
-                            className={styles.inputLote}
-                        />
+                <div className={styles.formgrid}>
+                    <div className={styles.formGrid1}>
+                        <div className={styles.formItem}>
+                            <label htmlFor="nome">Nome</label>
+                            <input 
+                                id="nome"
+                                type="text" 
+                                placeholder="Nome"
+                                required
+                            />
+                        </div>
+                        <div className={styles.formItem}>
+                            <label htmlFor="fab">Fabricante</label>
+                            <input 
+                                id="fab"
+                                type="text" 
+                                placeholder="Fabricante"
+                                required
+                            />
+                        </div>
                     </div>
-                    <div>
-                        <label htmlFor="quant">Quant.</label>
-                        <input 
-                            id="quant"
-                            type="number" 
-                            placeholder="Quantidade"
-                            required
-                            min="0"
-                            className={styles.inputQuant}
-                        />
+                    <div className={styles.formGrid2}>
+                        <div className={styles.formItem}>
+                            <label htmlFor="lote">Lote</label>
+                            <input 
+                                id="lote"
+                                type="text" 
+                                placeholder="12345678"
+                                required
+                                className={styles.inputLote}
+                            />
+                        </div>
+                        <div className={styles.formItem}>
+                            <label htmlFor="quant">Quant.</label>
+                            <input 
+                                id="quant"
+                                type="number" 
+                                placeholder="Quantidade"
+                                required
+                                min="0"
+                                className={styles.inputQuant}
+                            />
+                        </div>
+                        <div className={styles.formItem}>
+                            <label htmlFor="data">Data</label>
+                            <input 
+                                id="data"
+                                type="date" 
+                                required
+                                className={styles.inputData}
+                            />
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <label htmlFor="data">Data</label>
-                    <input 
-                        id="data"
-                        type="date" 
-                        required
-                    />
                 </div>
             </form>
             <Button>
