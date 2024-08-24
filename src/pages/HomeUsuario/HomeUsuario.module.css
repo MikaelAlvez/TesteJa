@@ -8,7 +8,6 @@
     height: 100vh;
     box-sizing: border-box;
     text-align: center; 
-    overflow: auto;
 }
 
 .container h1 {
@@ -107,7 +106,7 @@
         flex-wrap: wrap;
         gap: 10px;
         justify-content: center;
-        margin-bottom:
+        margin-bottom:40px;
     }
 
     .buttonsContainer button {

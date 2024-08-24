@@ -5,15 +5,13 @@ import Button from '@/app/components/Button';
 import { FaFilePdf } from "react-icons/fa";
 import { FaCalendarPlus } from "react-icons/fa";
 import { jsPDF } from 'jspdf';
+import { useRouter } from 'next/navigation';
 
 export default function HomeUsuario() {
     const nomeUsuario = "José";
     const cpfUsuario = "123.456.789-00";
 
     const vacinas = [
-        { imunologico: 'Pfizer', lote: '28230BD', unidade: 'UBS II - Liberdade', vacinador: 'Enf. João Silva' },
-        { imunologico: 'Pfizer', lote: 'FM3802', unidade: 'Secretária de saúde', vacinador: 'Enf. Vitória' },
-        { imunologico: 'Oxford-Astrazeneca', lote: '21OVCD33OZ', unidade: 'UBS II - Liberdade', vacinador: 'Enf. Cida' },
         { imunologico: 'Pfizer', lote: '28230BD', unidade: 'UBS II - Liberdade', vacinador: 'Enf. João Silva' },
         { imunologico: 'Pfizer', lote: 'FM3802', unidade: 'Secretária de saúde', vacinador: 'Enf. Vitória' },
         { imunologico: 'Oxford-Astrazeneca', lote: '21OVCD33OZ', unidade: 'UBS II - Liberdade', vacinador: 'Enf. Cida' },
@@ -61,6 +59,11 @@ export default function HomeUsuario() {
         doc.save('cartao_de_vacinacao.pdf');
     };
 
+    const router = useRouter();
+    const handleLoginRedirect = () => {
+        router.push('/NovoAgendamento');
+      };
+
     return (
         <div className={styles.container}>
             <LayoutUsuario nomeUsuario={nomeUsuario} />
@@ -77,7 +80,7 @@ export default function HomeUsuario() {
                 ))}
             </div>
             <div className={styles.buttonsContainer}>
-                <Button>
+                <Button onClick={handleLoginRedirect}>
                     <FaCalendarPlus />
                     Novo agendamento
                 </Button>
