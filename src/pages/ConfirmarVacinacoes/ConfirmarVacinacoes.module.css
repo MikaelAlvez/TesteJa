@@ -18,20 +18,6 @@
     max-width: 600px;
 }
 
-.calendarContainer {
-    position: absolute;
-    top: 100px;
-    right: 0px;
-    width: 300px;
-}
-
-.calendar {
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 .list {
     width: 100%;
     max-width: 1194px;

@@ -33,14 +33,6 @@ export default function ConfirmarVacinacoes() {
       <div className={styles.buscarContainer}>
         <Buscar />
       </div>
-      <div className={styles.calendarContainer}>
-        <Calendar
-          onChange={setDate}
-          value={date}
-          locale={ptBR}
-          className={styles.calendar}
-        />
-      </div>
       <div className={styles.list}>
         <div className={styles.spans}>
           <span>Nome</span>

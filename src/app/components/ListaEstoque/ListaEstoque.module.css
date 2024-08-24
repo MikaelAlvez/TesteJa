@@ -1,0 +1,32 @@
+.box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    width: 50%;
+    max-width: 800px; 
+    text-align: left;
+}
+
+.title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.item strong {
+    color: #333;
+}
