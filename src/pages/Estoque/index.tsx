@@ -9,6 +9,21 @@ export default function Estoque() {
     {nome: 'Pfizer - Pfizer', fabricante:'PFIZER MANUFACTURING', lote:'28230BD', quantidade: '10.590', local: 'Secretária Municipal de Saúde'},
     {nome: 'Astrazeneca/Fiocruz - COVISHIELD - Oxford', fabricante:'FUNDACAO OSWALDO CRUZ', lote:'21OVCD330Z', quantidade: '5.201', local: 'Secretária Municipal de Saúde'},
     {nome: 'COVID-19 Pfizer', fabricante:'PFIZER MANUFACTURING BELGIUM NV - BELGIVA', lote:'FM3802', quantidade: '590', local: 'GINASIO MUNICIPAL PEDRO CIARLINI'},
+    {nome: 'Pfizer - Pfizer', fabricante:'PFIZER MANUFACTURING', lote:'28230BD', quantidade: '10.590', local: 'Secretária Municipal de Saúde'},
+    {nome: 'Astrazeneca/Fiocruz - COVISHIELD - Oxford', fabricante:'FUNDACAO OSWALDO CRUZ', lote:'21OVCD330Z', quantidade: '5.201', local: 'Secretária Municipal de Saúde'},
+    {nome: 'COVID-19 Pfizer', fabricante:'PFIZER MANUFACTURING BELGIUM NV - BELGIVA', lote:'FM3802', quantidade: '590', local: 'GINASIO MUNICIPAL PEDRO CIARLINI'},
+    {nome: 'Pfizer - Pfizer', fabricante:'PFIZER MANUFACTURING', lote:'28230BD', quantidade: '10.590', local: 'Secretária Municipal de Saúde'},
+    {nome: 'Astrazeneca/Fiocruz - COVISHIELD - Oxford', fabricante:'FUNDACAO OSWALDO CRUZ', lote:'21OVCD330Z', quantidade: '5.201', local: 'Secretária Municipal de Saúde'},
+    {nome: 'COVID-19 Pfizer', fabricante:'PFIZER MANUFACTURING BELGIUM NV - BELGIVA', lote:'FM3802', quantidade: '590', local: 'GINASIO MUNICIPAL PEDRO CIARLINI'},
+    {nome: 'Pfizer - Pfizer', fabricante:'PFIZER MANUFACTURING', lote:'28230BD', quantidade: '10.590', local: 'Secretária Municipal de Saúde'},
+    {nome: 'Astrazeneca/Fiocruz - COVISHIELD - Oxford', fabricante:'FUNDACAO OSWALDO CRUZ', lote:'21OVCD330Z', quantidade: '5.201', local: 'Secretária Municipal de Saúde'},
+    {nome: 'COVID-19 Pfizer', fabricante:'PFIZER MANUFACTURING BELGIUM NV - BELGIVA', lote:'FM3802', quantidade: '590', local: 'GINASIO MUNICIPAL PEDRO CIARLINI'},
+    {nome: 'Pfizer - Pfizer', fabricante:'PFIZER MANUFACTURING', lote:'28230BD', quantidade: '10.590', local: 'Secretária Municipal de Saúde'},
+    {nome: 'Astrazeneca/Fiocruz - COVISHIELD - Oxford', fabricante:'FUNDACAO OSWALDO CRUZ', lote:'21OVCD330Z', quantidade: '5.201', local: 'Secretária Municipal de Saúde'},
+    {nome: 'COVID-19 Pfizer', fabricante:'PFIZER MANUFACTURING BELGIUM NV - BELGIVA', lote:'FM3802', quantidade: '590', local: 'GINASIO MUNICIPAL PEDRO CIARLINI'},
+    {nome: 'Pfizer - Pfizer', fabricante:'PFIZER MANUFACTURING', lote:'28230BD', quantidade: '10.590', local: 'Secretária Municipal de Saúde'},
+    {nome: 'Astrazeneca/Fiocruz - COVISHIELD - Oxford', fabricante:'FUNDACAO OSWALDO CRUZ', lote:'21OVCD330Z', quantidade: '5.201', local: 'Secretária Municipal de Saúde'},
+    {nome: 'COVID-19 Pfizer', fabricante:'PFIZER MANUFACTURING BELGIUM NV - BELGIVA', lote:'FM3802', quantidade: '590', local: 'GINASIO MUNICIPAL PEDRO CIARLINI'},
   ]
   
   return (

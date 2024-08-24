@@ -5,8 +5,8 @@
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
-    width: 50%;
-    max-width: 800px; 
+    width: 30%;
+    max-width: 800px;
     text-align: left;
 }
 
@@ -29,4 +29,35 @@
 
 .item strong {
     color: #333;
+}
+
+@media (max-width: 1024px) {
+    .box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+    .title {
+        font-size: 16px;
+    }
+    .item {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 100%;
+        padding: 15px;
+    }
+    .title {
+        font-size: 14px; 
+    }
+    .item {
+        font-size: 12px;
+    }
 }
