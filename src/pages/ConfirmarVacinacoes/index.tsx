@@ -1,13 +1,9 @@
 import LayoutServidores from '@/app/components/LayoutServidor';
 import Buscar from '@/app/components/Buscar'
 import ListaAgendamento from '@/app/components/ListaAgendamento'
-import Calendar from 'react-calendar';
 import styles from './ConfirmarVacinacoes.module.css'
-import { useState } from 'react';
-import { ptBR } from 'date-fns/locale';
 
 export default function ConfirmarVacinacoes() {
-  const [date, setDate] = useState(new Date());
   const nomeUsuario = "Fulano";
   
   const agendamentos = [

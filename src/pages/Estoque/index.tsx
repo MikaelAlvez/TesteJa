@@ -29,6 +29,7 @@ export default function Estoque() {
   return (
     <div className={styles.container}>
         <LayoutServidores nomeUsuario={nomeUsuario} />
+        <h1>Estoque</h1>
         <div className={styles.listContainer}>
             {estoque.map((item, index) => (
                 <ListaEstoque

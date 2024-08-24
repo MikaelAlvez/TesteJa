@@ -19,17 +19,17 @@ export default function NovoAgendamento() {
   return (
     <div className={styles.container}>
         <LayoutUsuario nomeUsuario={nomeUsuario}></LayoutUsuario>
+        <h1>Agendar</h1>
         <div className={styles.formContainer}>
             <form>
                 <div className={styles.formItem}>
-                    <label htmlFor="agendar">Agendar</label>
                     <select 
                       id='agendar' 
                       className={styles.select} 
                       value={agendar} 
                       onChange={handleAgendarChange}
                     >
-                        <option value="" disabled>Selecione a opção</option>
+                        <option value="" disabled>Selecione uma opção</option>
                         <option value="vacina">Vacinação</option>
                         <option value="teste">Teste de COVID</option>
                         <option value="consulta">Consulta médica</option>
