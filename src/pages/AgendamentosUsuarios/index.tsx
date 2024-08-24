@@ -4,6 +4,8 @@ import LayoutUsuario from '@/app/components/LayoutUsuario';
 import Buscar from '@/app/components/Buscar';
 import styles from './AgendamentosUsuarios.module.css';
 import ListaAgendamentoUsuario from '@/app/components/ListaAgendamentoUsuario';
+import Button from '@/app/components/Button';
+import { FaCalendarPlus } from "react-icons/fa";
 
 export default function AgendamentoServidor() {
   const nomeUsuario = "Fulano";
@@ -41,6 +43,12 @@ export default function AgendamentoServidor() {
             data={agendamentos.data}
             ></ListaAgendamentoUsuario>
         ))}
+      </div>
+      <div className={styles.buttonsContainer}>
+        <Button>
+          <FaCalendarPlus />
+          Novo agendamento
+        </Button>
       </div>
     </div>
   );

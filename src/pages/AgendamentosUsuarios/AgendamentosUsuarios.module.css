@@ -18,6 +18,29 @@
     max-width: 600px;
 }
 
+.buttonsContainer {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.buttonsContainer button {
+    flex: 1;
+    max-width: 280px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonsContainer button svg {
+    margin-right: 5px;
+    font-size: 30px;
+}
+
 .list {
     width: 100%;
     max-width: 1194px;
@@ -62,24 +85,6 @@
     text-align: center;
 }
 
-.actions {
-    display: flex;
-    gap: 10px;
-}
-
-.actionButton {
-    background: none;
-    border: none;
-    cursor: pointer;
-    width: 80px;
-    font-size: 15px;
-    color: #fff;
-    transition: color 0.3s, background-color 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .actionButton:hover {
     opacity: 0.8;
 }
@@ -109,10 +114,29 @@
         width: 100%;
         max-width: none;
     }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+    
+      .buttons button {
+        max-width: 100%;
+        height: 55px;
+        font-size: 18px;
+      }
 }
 
 @media (max-width: 480px) {
-    .spans {
-        display: none;
-    }
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+    
+      .buttons button {
+        max-width: 100%;
+        width: 150px;
+        height: 40px;
+        font-size: 12px;
+      }
 }
