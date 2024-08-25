@@ -120,70 +120,70 @@ export default function Home() {
         <div>
           <h2>Sobre as vacinas:</h2>
           <div className="vacinas-info">
-          <p>Vacinar-se é um ato necessário para a proteção individual e coletiva. Por meio dele, algumas doenças já foram erradicadas, como a varíola e a poliomielite. E, apesar de nenhuma vacina ser 100% eficaz, hoje a imunização é essencial para prevenir óbitos, casos graves da Covid-19 e para conter a pandemia.</p>
-          <p>Quatro vacinas contra a doença já receberam autorização da Agência Nacional de Vigilância Sanitária (Anvisa) para uso no Brasil: CoronaVac, vacina do Butantan produzida em parceria com a biofarmacêutica chinesa Sinovac, e os imunizantes das empresas AstraZeneca, Pfizer e Janssen; mas somente as três primeiras estão sendo utilizadas no Programa Nacional de Imunizações (PNI), do Ministério da Saúde, até o momento. Um levantamento de um consórcio de veículos de imprensa junto às secretarias da saúde mostra que até o dia 23/5 haviam sido aplicadas 62,6 milhões de doses nos brasileiros, sendo que a CoronaVac responde por 47,2 milhões delas.</p>
-          <p>Vale ressaltar que comparar a eficácia das vacinas e tentar eleger a melhor entre elas pode levar a conclusões enganosas. Isso porque os imunizantes foram desenvolvidos a partir de técnicas diferentes e testados em momentos, locais e em populações com nível de exposição ao vírus diferentes. Houve rigor científico em todos os testes e dados que comprovaram segurança e eficácia.</p>
-          <p>Ainda assim, a variedade de imunizantes disponíveis costuma causar dúvidas sobre aplicação, armazenamento, tecnologia empregada e intervalo entre as doses. Veja abaixo as diferenças entre as vacinas já aprovadas no país e confira a tabela com os principais dados.</p>
+            <p>Vacinar-se é um ato necessário para a proteção individual e coletiva. Por meio dele, algumas doenças já foram erradicadas, como a varíola e a poliomielite. E, apesar de nenhuma vacina ser 100% eficaz, hoje a imunização é essencial para prevenir óbitos, casos graves da Covid-19 e para conter a pandemia.</p>
+            <p>Quatro vacinas contra a doença já receberam autorização da Agência Nacional de Vigilância Sanitária (Anvisa) para uso no Brasil: CoronaVac, vacina do Butantan produzida em parceria com a biofarmacêutica chinesa Sinovac, e os imunizantes das empresas AstraZeneca, Pfizer e Janssen; mas somente as três primeiras estão sendo utilizadas no Programa Nacional de Imunizações (PNI), do Ministério da Saúde, até o momento. Um levantamento de um consórcio de veículos de imprensa junto às secretarias da saúde mostra que até o dia 23/5 haviam sido aplicadas 62,6 milhões de doses nos brasileiros, sendo que a CoronaVac responde por 47,2 milhões delas.</p>
+            <p>Vale ressaltar que comparar a eficácia das vacinas e tentar eleger a melhor entre elas pode levar a conclusões enganosas. Isso porque os imunizantes foram desenvolvidos a partir de técnicas diferentes e testados em momentos, locais e em populações com nível de exposição ao vírus diferentes. Houve rigor científico em todos os testes e dados que comprovaram segurança e eficácia.</p>
+            <p>Ainda assim, a variedade de imunizantes disponíveis costuma causar dúvidas sobre aplicação, armazenamento, tecnologia empregada e intervalo entre as doses. Veja abaixo as diferenças entre as vacinas já aprovadas no país e confira a tabela com os principais dados.</p>
 
-          <h3>CoronaVac</h3>
-          <p>A vacina do Butantan utiliza a tecnologia de vírus inativado (morto), uma técnica consolidada há anos e amplamente estudada. Ao ser injetado no organismo, esse vírus não é capaz de causar doença, mas induz uma resposta imunológica. Os ensaios clínicos da CoronaVac no Brasil foram realizados exclusivamente com profissionais da saúde, ou seja, pessoas com alta exposição ao vírus.</p>
+            <h3>CoronaVac</h3>
+            <p>A vacina do Butantan utiliza a tecnologia de vírus inativado (morto), uma técnica consolidada há anos e amplamente estudada. Ao ser injetado no organismo, esse vírus não é capaz de causar doença, mas induz uma resposta imunológica. Os ensaios clínicos da CoronaVac no Brasil foram realizados exclusivamente com profissionais da saúde, ou seja, pessoas com alta exposição ao vírus.</p>
 
-          <h3>AstraZeneca</h3>
-          <p>Foi desenvolvida pela farmacêutica AstraZeneca em parceria com a universidade de Oxford. No Brasil, é produzida pela Fundação Oswaldo Cruz (Fiocruz). A tecnologia empregada é o uso do chamado vetor viral. O adenovírus, que infecta chimpanzés, é manipulado geneticamente para que seja inserido o gene da proteína “Spike” (proteína “S”) do Sars-CoV-2.</p>
+            <h3>AstraZeneca</h3>
+            <p>Foi desenvolvida pela farmacêutica AstraZeneca em parceria com a universidade de Oxford. No Brasil, é produzida pela Fundação Oswaldo Cruz (Fiocruz). A tecnologia empregada é o uso do chamado vetor viral. O adenovírus, que infecta chimpanzés, é manipulado geneticamente para que seja inserido o gene da proteína “Spike” (proteína “S”) do Sars-CoV-2.</p>
 
-          <h3>Pfizer</h3>
-          <p>O imunizante da farmacêutica Pfizer em parceria com o laboratório BioNTech se baseia na tecnologia de RNA mensageiro, ou mRNA. O RNA mensageiro sintético dá as instruções ao organismo para a produção de proteínas encontradas na superfície do novo coronavírus, que estimulam a resposta do sistema imune.</p>
+            <h3>Pfizer</h3>
+            <p>O imunizante da farmacêutica Pfizer em parceria com o laboratório BioNTech se baseia na tecnologia de RNA mensageiro, ou mRNA. O RNA mensageiro sintético dá as instruções ao organismo para a produção de proteínas encontradas na superfície do novo coronavírus, que estimulam a resposta do sistema imune.</p>
 
-          <h3>Janssen</h3>
-          <p>Do grupo Johnson & Johnson, a vacina do laboratório Janssen é aplicada em apenas uma dose, mas ainda não está disponível no Brasil. Assim como o imunizante da Astrazeneca, também se utiliza da tecnologia de vetor viral, baseado em um tipo específico de adenovírus que foi geneticamente modificado para não se replicar em humanos.</p>
+            <h3>Janssen</h3>
+            <p>Do grupo Johnson & Johnson, a vacina do laboratório Janssen é aplicada em apenas uma dose, mas ainda não está disponível no Brasil. Assim como o imunizante da Astrazeneca, também se utiliza da tecnologia de vetor viral, baseado em um tipo específico de adenovírus que foi geneticamente modificado para não se replicar em humanos.</p>
 
-          <table>
-            <thead>
-              <tr>
-                <th>Vacina</th>
-                <th>Tecnologia</th>
-                <th>Eficácia</th>
-                <th>Intervalo entre Doses</th>
-                <th>Armazenamento</th>
-                <th>Voluntários em Ensaios Clínicos no Brasil</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>CoronaVac</td>
-                <td>Vírus inativado</td>
-                <td>A eficácia global pode chegar a 62,3% se o intervalo entre as duas doses for igual ou superior a 21 dias. Nos casos que requerem assistência médica a eficácia pode variar entre 83,7% e 100%</td>
-                <td>14 a 28 dias</td>
-                <td>De 2 a 8ºC</td>
-                <td>12,5 mil pessoas</td>
-              </tr>
-              <tr>
-                <td>AstraZeneca</td>
-                <td>Vetor viral</td>
-                <td>76% após a primeira dose e 81% após a segunda</td>
-                <td>12 semanas</td>
-                <td>De 2 a 8ºC</td>
-                <td>10 mil pessoas</td>
-              </tr>
-              <tr>
-                <td>Pfizer</td>
-                <td>RNA mensageiro</td>
-                <td>95% após a segunda dose</td>
-                <td>Até 12 semanas após a primeira dose</td>
-                <td>Pode ser armazenada por até cinco dias em temperaturas de 2 a 8°C; entre -25 e -15ºC por até duas semanas e entre -90 e -60ºC após este período</td>
-                <td>2 mil pessoas</td>
-              </tr>
-              <tr>
-                <td>Janssen</td>
-                <td>Vetor viral</td>
-                <td>66,9% de eficácia para casos leves e moderados, e 76,7% contra casos graves 14 dias após a aplicação</td>
-                <td> Dose única</td>
-                <td>De 2 a 8ºC</td>
-                <td>7,5 mil pessoas</td>
-              </tr>
-            </tbody>
-          </table>
-          <p>Para mais informações, visite a página oficial: <a href="https://butantan.gov.br/covid/butantan-tira-duvida/tira-duvida-noticias/quais-sao-as-diferencas-entre-as-vacinas-contra-covid-19-que-estao-sendo-aplicadas-no-brasil" target="_blank" rel="noopener noreferrer">Diferenças entre as vacinas contra Covid-19</a></p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Vacina</th>
+                  <th>Tecnologia</th>
+                  <th>Eficácia</th>
+                  <th>Intervalo entre Doses</th>
+                  <th>Armazenamento</th>
+                  <th>Voluntários em Ensaios Clínicos no Brasil</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CoronaVac</td>
+                  <td>Vírus inativado</td>
+                  <td>A eficácia global pode chegar a 62,3% se o intervalo entre as duas doses for igual ou superior a 21 dias. Nos casos que requerem assistência médica a eficácia pode variar entre 83,7% e 100%</td>
+                  <td>14 a 28 dias</td>
+                  <td>De 2 a 8ºC</td>
+                  <td>12,5 mil pessoas</td>
+                </tr>
+                <tr>
+                  <td>AstraZeneca</td>
+                  <td>Vetor viral</td>
+                  <td>76% após a primeira dose e 81% após a segunda</td>
+                  <td>12 semanas</td>
+                  <td>De 2 a 8ºC</td>
+                  <td>10 mil pessoas</td>
+                </tr>
+                <tr>
+                  <td>Pfizer</td>
+                  <td>RNA mensageiro</td>
+                  <td>95% após a segunda dose</td>
+                  <td>Até 12 semanas após a primeira dose</td>
+                  <td>Pode ser armazenada por até cinco dias em temperaturas de 2 a 8°C; entre -25 e -15ºC por até duas semanas e entre -90 e -60ºC após este período</td>
+                  <td>2 mil pessoas</td>
+                </tr>
+                <tr>
+                  <td>Janssen</td>
+                  <td>Vetor viral</td>
+                  <td>66,9% de eficácia para casos leves e moderados, e 76,7% contra casos graves 14 dias após a aplicação</td>
+                  <td> Dose única</td>
+                  <td>De 2 a 8ºC</td>
+                  <td>7,5 mil pessoas</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Para mais informações, visite a página oficial: <a href="https://butantan.gov.br/covid/butantan-tira-duvida/tira-duvida-noticias/quais-sao-as-diferencas-entre-as-vacinas-contra-covid-19-que-estao-sendo-aplicadas-no-brasil" target="_blank" rel="noopener noreferrer">Diferenças entre as vacinas contra Covid-19</a></p>
         </div>
         </div>
         <div>
@@ -201,7 +201,6 @@ export default function Home() {
         </div>
       </div>
       <div className="contact-section">
-        
       </div>
     </div>
   );

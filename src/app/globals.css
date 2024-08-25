@@ -263,6 +263,19 @@ h2 {
   .card {
     flex: 1 1 calc(50% - 20px);
   }
+
+  .menu {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -272,8 +285,60 @@ h2 {
     height: auto;
   }
 
+  .menu {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+
   .buttons button {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
   }
 }
+
+@media (max-width: 480px) {
+  .menu {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .card-title {
+    font-size: 0.8rem;
+  }
+
+  .card-text {
+    font-size: 0.7rem;
+  }
+
+  .buttons button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .menu {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .card-title {
+    font-size: 0.7rem;
+  }
+
+  .card-text {
+    font-size: 0.6rem;
+  }
+
+  .buttons button {
+    font-size: 12px;
+  }
+}
+
