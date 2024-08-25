@@ -37,7 +37,8 @@ body {
 
 .menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
   padding: 20px;
   background-color: #ffffff;
@@ -49,10 +50,15 @@ body {
   z-index: 1000;
 }
 
-.menu h1{
-  color: #000000;
-  font-size: 40px;
+.menu h1 {
+  margin: 0;
+  font-size: 2rem;
   font-family: 'Jost', sans-serif;
+  color: #000000;
+}
+
+.menu button {
+  font-size: 22px;
 }
 
 .image-container {
@@ -71,7 +77,7 @@ body {
   padding: 0 20px;
 }
 
-.info-section h2{
+.info-section h2 {
   font-size: 1.5rem;
   font-family: 'Jost', sans-serif;
   color: #007AC2;
@@ -80,7 +86,7 @@ body {
   text-align: center;
 }
 
-.info-section h3{
+.info-section h3 {
   font-size: 1.2rem;
   font-family: 'Jost', sans-serif;
   color: #007AC2;
@@ -123,6 +129,10 @@ body {
   gap: 10px;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+.buttons button {
+  font-size: 22px;
   width: 700px;
 }
 
@@ -132,7 +142,7 @@ body {
 
 .vacinas-info h3 {
   text-align: left;
-  font-size: 1rem; 
+  font-size: 1rem;
   color: #007AC2;
 }
 
@@ -162,7 +172,7 @@ th, td {
   border-bottom: 1px solid #ddd;
   padding: 8px;
   text-align: left;
-  color: #000; 
+  color: #000;
 }
 
 th {
@@ -184,7 +194,7 @@ h2 {
   padding: 20px;
   text-align: center;
   border-top: 1px solid #ddd;
-  margin-top: auto; 
+  margin-top: auto;
 }
 
 .contact-section h2 {
@@ -197,4 +207,73 @@ h2 {
   font-size: 1rem;
   color: #555;
   margin: 5px 0;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  max-width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .buttons button {
+    width: 100%;
+    font-size: 18px;
+  }
 }

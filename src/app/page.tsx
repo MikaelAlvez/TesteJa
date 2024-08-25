@@ -9,6 +9,10 @@ import profissionalImage from '@/Images/profissionaisdasaude.jpeg';
 import gestoresImage from '@/Images/gestores.jpeg';
 import Image from 'next/image';
 import banner from '@/Images/Banner-Vacina-Covid19-01-1.png';
+import CardNoticias from '@/app/components/CardNoticias';
+import news1Image from '@/Images/slide2.jpg';
+import news2Image from '@/Images/slide4.png';
+import news3Image from '@/Images/news3.jpg';
 
 export default function Home() {
   const router = useRouter();
@@ -33,6 +37,17 @@ export default function Home() {
     imageUrl: gestoresImage,
     info: 'Aos gestores, oferecemos uma ferramenta robusta para uma gestão inteligente e estratégica da imunização local. TESTEJA simplifica a administração de programas de imunização, fornecendo dados precisos para estratégias eficazes e tomadas de decisão embasadas.',
   };
+
+  const news = [
+    {imageUrl: news1Image, titulo: 'Cobertura da vacinaçào contra COVID-19 nas Américas', text:'Painel sobre a vacinação COVID-19 nas Américas com dados regionais, sub-regionais, nacionais, semanais e de status sócio-econômico do país.'},
+    {imageUrl: news2Image, titulo: 'Farmacovigilância para vacinas COVID-19', text:'O objetivo deste painel é apoiar os processos regulamentares para a introdução e o monitoramento da segurança das vacinas COVID-19.'},
+    {imageUrl: news3Image, titulo: 'REVELAC-I para vacinas COVID-19', text:'O objetivo da rede é estimar a eficácia das vacinas COVID-19 na prevenção de hospitalizações relacionadas ao IRAG.'},
+    {imageUrl: news1Image, titulo: 'Cobertura da vacinaçào contra COVID-19 nas Américas', text:'Painel sobre a vacinação COVID-19 nas Américas com dados regionais, sub-regionais, nacionais, semanais e de status sócio-econômico do país.'},
+    {imageUrl: news3Image, titulo: 'REVELAC-I para vacinas COVID-19', text:'O objetivo da rede é estimar a eficácia das vacinas COVID-19 na prevenção de hospitalizações relacionadas ao IRAG.'},
+    {imageUrl: news2Image, titulo: 'Farmacovigilância para vacinas COVID-19', text:'O objetivo deste painel é apoiar os processos regulamentares para a introdução e o monitoramento da segurança das vacinas COVID-19.'},
+    {imageUrl: news1Image, titulo: 'Cobertura da vacinaçào contra COVID-19 nas Américas', text:'Painel sobre a vacinação COVID-19 nas Américas com dados regionais, sub-regionais, nacionais, semanais e de status sócio-econômico do país.'},
+
+  ];
 
   return (
     <div className="home-container">
@@ -173,6 +188,16 @@ export default function Home() {
         </div>
         <div>
           <h2>Notícias</h2>
+          <div className="news-container">
+            {news.map((newsItem, index) => (
+              <CardNoticias 
+                key={index}
+                imageUrl={newsItem.imageUrl}
+                titulo={newsItem.titulo}
+                text={newsItem.text}
+              />
+            ))}
+          </div>
         </div>
       </div>
       <div className="contact-section">
