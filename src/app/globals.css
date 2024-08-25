@@ -61,12 +61,6 @@ body {
   margin-bottom: 20px;
 }
 
-.info-image {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 10px;
-}
-
 .info-section {
   margin-top: 150px;
   margin-bottom: 20px;
@@ -121,7 +115,68 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 50px;
+  width: 700px;
+}
+
+.vacinas-info {
+  padding: 30px;
+}
+
+.vacinas-info h3 {
+  text-align: left;
+  font-size: 1rem; 
+  color: #007AC2;
+}
+
+.vacinas-info p {
+  font-size: 1em;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.vacinas-info a {
+  color: #007AC2;
+  text-decoration: underline;
+}
+
+.vacinas-info a:hover {
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
   margin: 20px 0;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  color: #000; 
+}
+
+th {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .contact-section {
